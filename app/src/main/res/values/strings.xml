@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">KNK Unique</string>
+    <string name="men">MEN</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="home">HOME</string>
+    <string name="category">CATEGORY</string>
+    <string name="new_in">NEW IN</string>
+    <string name="for_you">FOR YOU</string>
+    <string name="up_to_50_off_your_fantasy_fits">UP TO 50% OFF YOUR FANTASY \'FITS!</string>
+    <string name="new_products">NEW PRODUCTS</string>
+    <string name="clothing">Clothing</string>
+    <string name="shoes">Shoes</string>
+    <string name="accessories">Accessories</string>
+    <string name="back_in_stock">Back in stock</string>
+    <string name="outlet">Outlet</string>
+    <string name="trending_now">Trending now</string>
+    <string name="face_body">Face + Body</string>
+    <string name="topman">Topman</string>
+    <string name="off_campus">OFF - CAMPUS</string>
+    <string name="new_edits">NEW EDITS</string>
+    <string name="golden_hour">GOLDEN HOUR</string>
+    <string name="topman1">TOPMAN</string>
+    <string name="let_s_get_personal">LET\'S GET PERSONAL</string>
+    <string name="sign_in_for_your_own_top_picks">Sign in for your own top picks</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="winter_jacket">WINTER JACKET</string>
+
+</resources>

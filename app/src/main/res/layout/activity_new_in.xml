@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewInActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:text="@string/men"
+        android:layout_marginStart="45dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/arrow_for_selection"
+        android:layout_width="20dp"
+        android:layout_height="13dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_arrow_down"
+        app:layout_constraintEnd_toEndOf="@id/Title"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="@id/Title"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/title_bar_favorite"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/ic_menu_favorite"
+        app:layout_constraintBottom_toBottomOf="@+id/Title"
+        app:layout_constraintEnd_toStartOf="@+id/search_view"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toEndOf="@+id/arrow_for_selection" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="16dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Title">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_bar"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/bar_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="@string/home"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bar_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="@string/category"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bar_new_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="@string/new_in"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bar_for_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="@string/for_you"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/new_products"
+            android:textSize="25sp"
+            android:textStyle="bold"
+             android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/lining_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:src="@drawable/clothing"/>
+
+            <TextView
+                android:id="@+id/newin_clothing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clothing"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/lining_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:src="@drawable/shoes"/>
+
+            <TextView
+                android:id="@+id/newin_shoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shoes"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/lining_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:src="@drawable/accesories"/>
+
+            <TextView
+                android:id="@+id/newin_accessories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accessories"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/lining_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:src="@drawable/face"/>
+
+            <TextView
+                android:id="@+id/newin_face_plus_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/face_body"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/lining_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:src="@drawable/topman"/>
+
+            <TextView
+                android:id="@+id/newin_topman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/topman"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/lining_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:src="@drawable/backinstock"/>
+
+            <TextView
+                android:id="@+id/newin_back_in_stock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/back_in_stock"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/lining_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:src="@drawable/outlet"/>
+
+            <TextView
+                android:id="@+id/newin_outlet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/outlet"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/lining_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:src="@drawable/trendinnow"/>
+
+            <TextView
+                android:id="@+id/newin_trending_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trending_now"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/new_edits"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:paddingTop="25dp"
+            android:paddingStart="15dp"
+            android:textColor="@color/black"
+            android:paddingBottom="10dp"
+            android:background="@color/color_light_grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="15dp"
+            android:background="@color/color_light_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:src="@drawable/off_campus" />
+
+            <TextView
+                android:id="@+id/newin_off_campus"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="@string/off_campus"
+                android:paddingStart="15dp"
+                android:paddingTop="32.5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="15dp"
+            android:background="@color/color_light_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:src="@drawable/topman" />
+
+            <TextView
+                android:id="@+id/newin_top_man"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="@string/topman1"
+                android:paddingStart="15dp"
+                android:paddingTop="32.5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="15dp"
+            android:background="@color/color_light_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:src="@drawable/goldenhour" />
+
+            <TextView
+                android:id="@+id/newin_golden_hour"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="@string/golden_hour"
+                android:paddingStart="15dp"
+                android:textStyle="bold"
+                android:paddingTop="32.5dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
